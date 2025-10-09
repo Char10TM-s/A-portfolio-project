@@ -1,12 +1,123 @@
-<section id="skills">
-    <!-- ฝังคลิปจาก Google Drive -->
-    <iframe src="https://drive.google.com/file/d/1wSX5VduIc3aoR6hmUEadbclTKexQ9TYu/preview" width="640" height="480" allow="autoplay" frameborder="0"></iframe>
-    <div class="content">
-        <div class="overlay-box">
-            <h1><u>Skills</u></h1>
-            <p>ในหน้านี้คุณจะได้รู้ว่าฉันมีทักษะในการทำอะไรบ้าง ไม่ว่าจะเป็นภาษา,โปรแกรม,หรือเครื่องมือต่างๆ ที่สามารถใช้งานได้
-            สามารถชมได้ทิ้งลิ้งค์นี้ใต้นี้</p>
-            <a href="skills.html">Click Here to go to skills page</a>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 50px; /* เพิ่มระยะห่างระหว่างกล่อง */
+            padding: 20px;
+        }
+        .section:nth-child(even) .text {
+            order: 2;
+        }
+        .section .text {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .section .image {
+            flex: 1;
+            padding: 20px;
+        }
+        .section .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* สำหรับ Section สุดท้ายที่เป็นข้อความยาวๆ */
+        .last-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px; /* กำหนดความสูงของกล่อง */
+            background-color: #333; /* สีพื้นหลังของกล่อง */
+            color: #fff; /* สีข้อความ */
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+        <meta charset="UTF-8">
+  <title>Introduce - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="introduce.html">Introduce</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+  </header>
+
+    <div class="container">
+        <!-- Section 1: Text on the left, image on the right -->
+        <div class="section">
+            <div class="text">
+                <h1>สวัสดีครับ/ค่ะ, ผมชื่อ [ชื่อของคุณ]</h1>
+                <p>ยินดีที่ได้รู้จักครับ/ค่ะ! ผมเป็นนักพัฒนาเว็บไซต์ที่มีความสนใจในเทคโนโลยีและการออกแบบเว็บ รวมถึงการใช้เครื่องมือที่ทันสมัยในการพัฒนาเว็บไซต์ให้มีประสิทธิภาพสูงสุด</p>
+            </div>
+            <div class="image">
+                <img src="your-image.jpg" alt="รูปของคุณ">
+            </div>
+        </div>
+
+        <!-- Section 2: Image on the left, text on the right -->
+        <div class="section">
+            <div class="image">
+                <img src="your-image2.jpg" alt="รูปที่สองของคุณ">
+            </div>
+            <div class="text">
+                <h1>เกี่ยวกับการทำงานของผม</h1>
+                <p>ผมมีประสบการณ์ในการใช้ HTML, CSS, JavaScript และเทคโนโลยีที่ทันสมัยในการพัฒนาเว็บไซต์ที่ใช้งานได้ดีบนทุกอุปกรณ์ ผมยังเชี่ยวชาญในการใช้โปรแกรมต่างๆ เช่น Photoshop, Illustrator และเครื่องมืออื่นๆ ที่ช่วยในการออกแบบเว็บไซต์ที่สวยงามและใช้งานได้ดี</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Text on the left, image on the right -->
+        <div class="section">
+            <div class="text">
+                <h1>ความสนใจและเป้าหมายในอนาคต</h1>
+                <p>ผมสนใจในเทคโนโลยีใหม่ๆ เช่น AI และ Machine Learning และตั้งเป้าหมายในการพัฒนาเว็บไซต์ที่มีฟีเจอร์การใช้งานที่ทันสมัยและตอบโจทย์การใช้งานของผู้ใช้ทุกคน</p>
+            </div>
+            <div class="image">
+                <img src="your-image3.jpg" alt="รูปที่สามของคุณ">
+            </div>
+        </div>
+
+        <!-- Section 4: Box with centered text -->
+        <div class="last-section">
+            <p>นี่คือข้อความที่อยู่ในกล่องยาว ๆ ซึ่งไม่มีรูปภาพในส่วนนี้ เพื่อแสดงข้อมูลเพิ่มเติมหรือเนื้อหาที่สำคัญ!</p>
         </div>
     </div>
-</section>
+
+</body>
+</html>

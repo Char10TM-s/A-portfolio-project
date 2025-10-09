@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 100px; /* เพิ่มระยะห่างระหว่างกล่อง */
+            padding: 20px;
+        }
+        .section:nth-child(even) .text {
+            order: 2;
+        }
+        .section .text {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+        }
+        .section .image {
+            flex: 1;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .section .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 58px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 26px;
+            white-space: pre-line;
+            color: #000000;
+            line-height: 1.6;
+        }
+        p2 {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        /* สำหรับให้แต่ละกล่องเลื่อนลงมาได้ */
+        .content-wrapper {
+            display: block;
+            margin-top: 100px;
+        }
+         .last-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px; /* กำหนดความสูงของกล่อง */
+            background-color: #969595; /* สีพื้นหลังของกล่อง */
+            color: #000000; /* สีข้อความ */
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
-  <header>
+      <header>
     <nav>
       <a href="index.html">Home</a>
       <a href="introduce.html">Introduce</a>
@@ -16,11 +93,48 @@
     </nav>
   </header>
 
- <main>
-    <h2>คือกูยังเอารูปลวไม่เป็น</h2>
-    <ul>
-      <li>เอาเป็นว่าจินตนาการว่าหน้านี้มีพอร์ตอยู่แล้วกัน</li>
-    </ul>
-  </main>
+    <div class="container">
+        <!-- Section 1: Text on the left, image on the right -->
+        <div class="section">
+            <div class="text">
+                <h1>รางวัลเหรียญเงิน</h1>
+                <p> ได้รับเหรียญเงินในการแข่งขันตัดต่อวีดิโอภาพยนต์สั้นในงาน "ศิลปะหัตถกรรมนักเรียนครั้งที่71 ประจำปี 2566"
+                </p>
+            </div>
+            <div class="image">
+                <img src="PF1.jpg" alt="รูปของคุณ">
+            </div>
+        </div>
+        <!-- Section 2: Image on the left, text on the right -->
+        <div class="section">
+            <div class="image">
+                <img src="PF2.jpg" alt="รูปที่สองของคุณ">
+            </div>
+            <div class="text">
+                <h1>รางวัลเหรียญทอง</h1>
+                <p>ได้รับเหรียญทองในการแข่งขันตัดต่อวีดิโอภาพยนต์สั้นในงาน "ศิลปะหัตถกรรมนักเรียนครั้งที่72 ประจำปี 2567"
+                </p>
+            </div>
+        </div>
+        <!-- Section 3: Text on the left, image on the right -->
+        <div class="section">
+            <div class="text">
+                <h1>ใบประกาศนิยบัตร</h1>
+                <p>ผมมีใบประกาศนิยบัตรในการศึกษาเขียนโค้ดในเว็ปไซต์ coding for better life
+                </p>
+            </div>
+            <div class="image">
+                <img src="PF3.png" alt="รูปที่สามของคุณ">
+            </div>
+        </div>
+
+                <!-- Section 4: Box with centered text -->
+        <div class="last-section">
+            <p2>ขอบคุณทุกคนที่อ่านทุกหน้าของเว็ปไซต์ของเด็กน้อยตาดำๆคนนี้ ถ้าหากอยากกลับไปดูหน้าอื่นก็กดลิ้งค์กลับไปหน้า home ได้เลย!</p2>
+          <a href="index.html">Clike Here to go to Home page</a>
+          </div>
+    </div>
+    </div>
+
 </body>
 </html>
